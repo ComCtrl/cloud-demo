@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @author 刘彦硕
  * @Description TODO
@@ -28,7 +30,7 @@ public class AlandConsumerApplication {
     private HiService hiService;
 
     @GetMapping("test")
-    public String test(@RequestParam(value = "name") String name){
-        return hiService.hi(name);
+    public String test(@RequestParam(value = "name") String name, HttpServletRequest request){
+        return "当前ip地址：" + request.getLocalAddr()  + ", 返回的内容是:"  + hiService.hi(name);
     }
 }
