@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: dubbo-consumer
+  main:
+    # Spring Boot 2.1 需要设定
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      # Nacos 服务发现与注册配置
+      discovery:
+        server-addr: localhost:8848
+dubbo:
+#  scan:
+#    base-packages: com.github.comctrl.consumer.controller
+#  protocol:
+#    name: dubbo
+#    port: -1
+  registry:
+    # 挂载到 Spring Cloud 注册中心
+    address: spring-cloud://localhost
+  cloud:
+    subscribed-services: dubbo-provider
+
+server:
+  port: 8001
+
+endpoints:
+  dubbo:
+    enabled: true
+
+management:
+  health:
+    dubbo:
+      status:
+        defaults: memory
+        extras: threadpool
+  endpoints:
+    web:
+      exposure:
+        include: "*"
