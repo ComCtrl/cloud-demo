@@ -14,7 +14,6 @@
         <module>aland-gateway</module>
         <module>dubbo-provider</module>
         <module>dubbo-consumer</module>
-        <module>api</module>
     </modules>
 
     <parent>
