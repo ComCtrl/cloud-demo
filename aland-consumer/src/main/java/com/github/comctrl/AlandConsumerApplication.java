@@ -31,6 +31,6 @@ public class AlandConsumerApplication {
 
     @GetMapping("test")
     public String test(@RequestParam(value = "name") String name, HttpServletRequest request){
-        return "当前ip地址：" + request.getLocalAddr()  + ", 返回的内容是:"  + hiService.hi(name);
+        return "当前ip地址是：" + request.getLocalAddr()  + ", 返回的内容是:"  + hiService.hi(name);
     }
 }
