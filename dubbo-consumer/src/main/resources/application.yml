@@ -8,7 +8,7 @@ spring:
     nacos:
       # Nacos 服务发现与注册配置
       discovery:
-        server-addr: http://8848.gr97e7c4.thal390r.fc60ca.grapps.cn/
+        server-addr: localhost:8848
 dubbo:
 #  scan:
 #    base-packages: com.github.comctrl.consumer.controller
