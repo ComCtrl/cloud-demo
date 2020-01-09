@@ -12,9 +12,9 @@
         <module>aland-provider</module>
         <module>aland-consumer</module>
         <module>aland-gateway</module>
-        <module>dubbo-api</module>
         <module>dubbo-provider</module>
         <module>dubbo-consumer</module>
+        <module>api</module>
     </modules>
 
     <parent>

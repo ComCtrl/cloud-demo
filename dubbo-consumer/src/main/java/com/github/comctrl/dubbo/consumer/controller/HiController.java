@@ -1,6 +1,5 @@
 package com.github.comctrl.dubbo.consumer.controller;
 
-import com.github.comctrl.dubbo.api.HelloService;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
