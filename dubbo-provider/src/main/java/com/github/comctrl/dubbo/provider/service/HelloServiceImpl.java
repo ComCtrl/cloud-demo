@@ -1,5 +1,6 @@
 package com.github.comctrl.dubbo.provider.service;
 
+import com.github.comctrl.dubbo.service.HelloService;
 import org.apache.dubbo.config.annotation.Service;
 
 @Service

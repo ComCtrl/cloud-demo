@@ -1,4 +1,4 @@
-package com.github.comctrl.dubbo.provider.service;
+package com.github.comctrl.dubbo.service;
 
 public interface HelloService {
     String hello(String name);
