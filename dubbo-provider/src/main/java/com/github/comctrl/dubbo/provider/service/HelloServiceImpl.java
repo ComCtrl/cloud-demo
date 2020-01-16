@@ -7,6 +7,6 @@ import org.apache.dubbo.config.annotation.Service;
 public class HelloServiceImpl implements HelloService {
     @Override
     public String hello(String name) {
-        return "hi， " + name;
+        return "nihao， " + name;
     }
 }
